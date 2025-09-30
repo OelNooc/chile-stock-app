@@ -1,59 +1,121 @@
-# ChileStockApp
+# 📈 Chile Stock App
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.3.3.
+Aplicación web para el seguimiento en tiempo real del mercado de valores chileno (IPSA, IGPA, etc.).
 
-## Development server
+## 🚀 Stack Tecnológico
 
-To start a local development server, run:
+- **Angular 20.3.3** - Framework principal
+- **TypeScript** - Lenguaje de programación
+- **PrimeNG** - Biblioteca de componentes UI
+- **Signals** - Manejo de estado reactivo
+- **Karma + Jasmine** - Testing
 
-```bash
-ng serve
-```
+## 📋 Requisitos Previos
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+- Node.js 22.12.0 o superior
+- npm 11.6.1 o superior
+- Git
 
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+## 🛠️ Instalación
 
 ```bash
-ng generate --help
+# Clonar el repositorio
+git clone <url-del-repositorio>
+cd chile-stock-app
+
+# Instalar dependencias
+npm install
+
+# Ejecutar en modo desarrollo
+npm start
 ```
 
-## Building
+La aplicación estará disponible en `http://localhost:4200/`
 
-To build the project run:
+## 📁 Estructura del Proyecto
+
+```
+src/
+├── app/
+│   ├── core/              # Servicios core, guards, interceptors
+│   ├── features/          # Módulos de funcionalidades
+│   │   ├── instruments/   # Feature de instrumentos financieros
+│   │   └── charts/        # Feature de gráficos
+│   ├── shared/            # Componentes, pipes, directivas compartidas
+│   └── app.component.ts   # Componente raíz
+├── assets/                # Recursos estáticos
+└── environments/          # Configuración de entornos
+```
+
+## 🧪 Testing
 
 ```bash
-ng build
+# Ejecutar tests unitarios
+npm test
+
+# Ejecutar tests con cobertura
+npm run test:coverage
+
+# Ejecutar tests en modo headless (CI)
+npm run test:ci
 ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+## 📦 Build
 
 ```bash
-ng test
+# Build de producción
+npm run build
+
+# Build con análisis de bundle
+npm run build:stats
 ```
 
-## Running end-to-end tests
+## 🎯 Características Principales
 
-For end-to-end (e2e) testing, run:
+- ✅ Visualización en tiempo real de índices bursátiles
+- ✅ Gráficos interactivos con diferentes períodos
+- ✅ Lista de instrumentos con información detallada
+- ✅ Búsqueda de instrumentos
+- ✅ Responsive design
+- ✅ Estado global con Signals
 
-```bash
-ng e2e
+## 🔄 Flujo de Desarrollo
+
+1. Crear rama feature desde `develop`
+2. Desarrollar y hacer commits siguiendo conventional commits
+3. Escribir tests unitarios
+4. Crear Pull Request
+5. Revisión de código
+6. Merge a `develop`
+
+## 📝 Conventional Commits
+
+```
+feat: nueva funcionalidad
+fix: corrección de bugs
+docs: cambios en documentación
+style: formateo, punto y coma faltantes, etc
+refactor: refactorización de código
+test: agregar o modificar tests
+chore: actualizar dependencias, configuración, etc
 ```
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+## 👥 Contribuir
 
-## Additional Resources
+Las contribuciones son bienvenidas. Por favor:
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+1. Fork el proyecto
+2. Crea una rama para tu feature
+3. Commit tus cambios
+4. Push a la rama
+5. Abre un Pull Request
+
+## 📄 Licencia
+
+Este proyecto está bajo la Licencia MIT.
+
+## 📧 Contacto
+
+Para preguntas o sugerencias, por favor abre un issue en el repositorio.
+
+---
