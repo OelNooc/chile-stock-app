@@ -1,7 +1,7 @@
 import { Component, OnInit, signal } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { MockDataService } from '@core/services/mock-data.service';
-import { ConstituentInstrument, InstrumentDetail, ChartDataPoint } from '@core/models';
+import { MockDataService } from './core/services/mock-data.service';
+import { ConstituentInstrument, InstrumentDetail, ChartDataPoint } from './core/models';
 
 @Component({
   selector: 'app-root',

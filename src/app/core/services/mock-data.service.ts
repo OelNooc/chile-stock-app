@@ -5,7 +5,7 @@ import {
   ConstituentsResponse, 
   InstrumentDetailResponse, 
   ChartHistoryResponse 
-} from '@core/models';
+} from '../models';
 
 @Injectable({
   providedIn: 'root'
@@ -17,7 +17,7 @@ export class MockDataService {
 
   getConstituents(): Observable<ConstituentsResponse> {
     return this.http.get<ConstituentsResponse>(
-      `${this.basePath}/constituents/ipsa.json`
+      `${this.basePath}/constituents/constituensList.json`
     );
   }
 
@@ -26,7 +26,7 @@ export class MockDataService {
    */
   getInstrumentHistory(symbol: string): Observable<ChartHistoryResponse> {
     return this.http.get<ChartHistoryResponse>(
-      `${this.basePath}/history/${symbol}.json`
+      `${this.basePath}/history/history-${symbol}.json`
     );
   }
 
